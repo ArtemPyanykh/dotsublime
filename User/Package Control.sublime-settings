@@ -1,6 +1,7 @@
 {
 	"installed_packages":
 	[
+		"GoldenRatio",
 		"Package Control"
 	]
 }

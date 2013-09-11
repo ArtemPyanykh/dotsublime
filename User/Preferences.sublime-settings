@@ -1,16 +1,27 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
-	"font_size": 10,
-	"ignored_packages": [],
-	"vintage_start_in_command_mode": true,
-	"tab_size": 2,
-	"translate_tabs_to_spaces": true,
 	"drawWhiteSpace": true,
+	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns":
+	[
+		".git",
+		"log",
+		"tmp"
+	],
+	"font_size": 10,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+	],
 	"matchBracketsAngle": true,
 	"matchBracketsBraces": true,
 	"matchBracketsSquare": true,
-	"rulers": [ 80 ],
+	"rulers":
+	[
+		80
+	],
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"highlight_modified_tabs": true,
-  "ensure_newline_at_eof_on_save": true
+	"vintage_start_in_command_mode": true
 }
