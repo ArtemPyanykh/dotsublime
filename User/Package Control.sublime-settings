@@ -1,14 +1,13 @@
 {
 	"installed_packages":
 	[
-		"Git",
 		"GitGutter",
 		"Origami",
 		"Package Control",
 		"RailsCasts Colour Scheme",
 		"RSpec (snippets and syntax)",
 		"SideBarEnhancements",
-		"SideBarGit",
+		"SublimeREPL",
 		"Theme - Centurion",
 		"Vintageous",
 		"VintageousOrigami"

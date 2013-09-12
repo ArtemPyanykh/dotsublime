@@ -1,4 +1,5 @@
 *.swp
 /User/Package Control.cache/
 /User/Package Control.last-run
-
+/User/.SublimeREPLHistory
+/dotsublime.sublime-workspace
