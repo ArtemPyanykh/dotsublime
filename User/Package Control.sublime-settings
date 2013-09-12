@@ -1,7 +1,16 @@
 {
 	"installed_packages":
 	[
-		"GoldenRatio",
-		"Package Control"
+		"Git",
+		"GitGutter",
+		"Origami",
+		"Package Control",
+		"RailsCasts Colour Scheme",
+		"RSpec (snippets and syntax)",
+		"SideBarEnhancements",
+		"SideBarGit",
+		"Theme - Centurion",
+		"Vintageous",
+		"VintageousOrigami"
 	]
 }

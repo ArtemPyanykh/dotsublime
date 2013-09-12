@@ -1,10 +1,7 @@
 [
-  {
-    "keys": ["j", "j"],
-    "command": "exit_insert_mode",
-    "context": [
-      { "key": "setting.command_mode", "operand": false },
-      { "key": "setting.is_widget", "operand": false }
-    ]
-  }
+	{ "keys": ["j", "j"], "command": "set_action", "args": {"action": "vi_esc"}, "context": [{"key": "vi_mode_insert"}, {"key": "vi_is_buffer"}] },
+	{ "keys": [",", "s"], "command": "toggle_side_bar", "context": [{"key": "setting.command_mode"}] },
+	{ "keys": ["ctrl+r"], "command": "redo" },
+	{ "keys": [",", "z"], "command": "zoom_pane", "args": {}, "context": [{"key": "setting.command_mode"}] },
+	{ "keys": [",", "u"], "command": "unzoom_pane", "args": {}, "context": [{"key": "setting.command_mode"}] }
 ]
