@@ -3,3 +3,5 @@
 /User/Package Control.last-run
 /User/.SublimeREPLHistory
 /dotsublime.sublime-workspace
+.DS_Store
+*.system-ca-bundle

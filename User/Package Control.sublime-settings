@@ -1,15 +1,18 @@
 {
 	"installed_packages":
 	[
+		"AngularJS",
+		"AngularJS (CoffeeScript)",
+		"Better CoffeeScript",
 		"GitGutter",
 		"Origami",
 		"Package Control",
-		"RailsCasts Colour Scheme",
 		"RSpec (snippets and syntax)",
 		"SideBarEnhancements",
+		"SublimeCodeIntel",
 		"SublimeREPL",
-		"Theme - Centurion",
 		"Vintageous",
-		"VintageousOrigami"
+		"VintageousOrigami",
+		"Zen Tabs"
 	]
 }

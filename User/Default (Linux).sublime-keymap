@@ -1,7 +1,0 @@
-[
-	{ "keys": ["j", "j"], "command": "set_action", "args": {"action": "vi_esc"}, "context": [{"key": "vi_mode_insert"}, {"key": "vi_is_buffer"}] },
-	{ "keys": [",", "t"], "command": "toggle_side_bar", "context": [{"key": "setting.command_mode"}] },
-	{ "keys": ["ctrl+r"], "command": "redo" },
-	{ "keys": [",", "z"], "command": "zoom_pane", "args": {}, "context": [{"key": "setting.command_mode"}] },
-	{ "keys": [",", "u"], "command": "unzoom_pane", "args": {}, "context": [{"key": "setting.command_mode"}] }
-]
