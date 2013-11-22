@@ -36,9 +36,10 @@
 	[
 		"Vintage"
 	],
+	"trim_trailing_white_space_on_save": true,
 	"rulers":
 	[
 		80
 	],
-	"trim_trailing_white_space_on_save": true
+	"theme": "Soda Dark 3.sublime-theme"
 }

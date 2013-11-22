@@ -5,3 +5,4 @@
 /dotsublime.sublime-workspace
 .DS_Store
 *.system-ca-bundle
+User/linters/*
