@@ -19,5 +19,7 @@
   { "keys": ["ctrl+l"], "command": "move", "args": {"by": "characters", "forward": true}},
   { "keys": ["ctrl+h"], "command": "move", "args": {"by": "characters", "forward": false}},
   { "keys": ["ctrl+j"], "command": "move", "args": {"by": "lines", "forward": true}},
-  { "keys": ["ctrl+k"], "command": "move", "args": {"by": "lines", "forward": false}}
+  { "keys": ["ctrl+k"], "command": "move", "args": {"by": "lines", "forward": false}},
+  // Navigate if find result by enter (should place cursor before line-position)
+  { "keys": ["enter"], "command": "next_result", "context": [{"key": "selector", "operator": "equal", "operand": "text.find-in-files" }]}
 ]
