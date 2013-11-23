@@ -6,3 +6,4 @@
 .DS_Store
 *.system-ca-bundle
 User/linters/*
+User/RubyTest.last-run
