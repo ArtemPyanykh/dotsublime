@@ -1,25 +1,43 @@
 [
-  { "keys": ["j", "j"], "command": "set_action", "args": {"action": "vi_esc"}, "context": [{"key": "vi_mode_insert"}, {"key": "vi_is_buffer"}] },
+  { "keys": ["j", "j"], "command": "set_action", "args": {"action": "vi_esc"}, "context": [{"key": "vi_must_change_mode"}, {"key": "vi_is_buffer"}, {"key": "vi_mode_insert"}] },
   { "keys": ["ctrl+r"], "command": "redo" },
   // Enter command mode
-  { "keys": [";"], "command": "vi_colon_input", "context": [{"key": "setting.command_mode"}, {"key": "vi_enable_cmdline_mode"}] },
-  { "keys": [";"], "command": "vi_colon_input", "args": {"initial_text": ":'<,'>"}, "context": [{"key": "setting.command_mode"}, {"key": "selection_empty", "operator": "equal", "operand": false }, {"key": "vi_enable_cmdline_mode"}] },
-  // Repeat `f`
-  { "keys": [":"], "command": "set_motion", "args":{"motion": "vi_semicolon"}, "context": [{"key": "vi_mode_normal"}] },
-  { "keys": [":"], "command": "set_motion", "args":{"motion": "vi_semicolon"}, "context": [{"key": "vi_mode_visual"}] },
-  // Leader mappins
-  { "keys": [",", "t"], "command": "toggle_side_bar", "context": [{"key": "setting.command_mode"}] },
-  { "keys": [",", "f", "s"], "command": "focus_side_bar"},
-  { "keys": [",", "f", "f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
-  { "keys": [",", "."], "command": "zoom_pane", "args": {"fraction": 0.7}, "context": [{"key": "setting.command_mode"}] },
-  { "keys": [",", ","], "command": "unzoom_pane", "args": {}, "context": [{"key": "setting.command_mode"}] },
-  { "keys": [",", "g", "u"], "command": "lower_case"},
-  { "keys": [",", "g", "U"], "command": "upper_case"},
+  // { "keys": [";"], "command": "vi_colon_input", "context": [{"key": "setting.command_mode"}, {"key": "vi_enable_cmdline_mode"}] },
+  // { "keys": [";"], "command": "vi_colon_input", "args": {"initial_text": ":'<,'>"}, "context": [{"key": "setting.command_mode"}, {"key": "selection_empty", "operator": "equal", "operand": false }, {"key": "vi_enable_cmdline_mode"}] },
+  // // // Repeat `f`
+  // { "keys": [":"], "command": "set_motion", "args":{"motion": "vi_semicolon"}, "context": [{"key": "vi_mode_normal"}] },
+  // { "keys": [":"], "command": "set_motion", "args":{"motion": "vi_semicolon"}, "context": [{"key": "vi_mode_visual"}] },
+  // // Leader mappins
+  { "keys": ["super+equals"], "command": "zoom_pane", "args": {"fraction": 0.7}, "context": [{"key": "setting.command_mode"}] },
+  { "keys": ["super+minus"], "command": "unzoom_pane", "args": {}, "context": [{"key": "setting.command_mode"}] },
+  { "keys": ["ctrl+o"], "command": "jump_back" },
+  { "keys": ["ctrl+i"], "command": "jump_forward" },
+  { "keys": ["ctrl+["], "command": "goto_definition" },
+  { "keys": ["ctrl+]"], "command": "goto_symbol_in_project" },
+
+  { "keys": ["ctrl+f"], "command": "set_motion", "args": {"motion": "vi_ctrl_f"}, "context": [{"key": "vi_mode_normal_or_any_visual"}] },
+  { "keys": ["ctrl+b"], "command": "set_motion", "args": {"motion": "vi_ctrl_b"}, "context": [{"key": "vi_mode_normal_or_any_visual"}] },
+  { "keys": ["ctrl+d"], "command": "set_motion", "args": {"motion": "vi_ctrl_d"}, "context": [{"key": "vi_mode_normal_or_any_visual"}] },
+  { "keys": ["ctrl+u"], "command": "set_motion", "args": {"motion": "vi_ctrl_u"}, "context": [{"key": "vi_mode_normal_or_any_visual"}] },
   // Pseudo-VIM navigation everywhere
   { "keys": ["ctrl+l"], "command": "move", "args": {"by": "characters", "forward": true}},
   { "keys": ["ctrl+h"], "command": "move", "args": {"by": "characters", "forward": false}},
   { "keys": ["ctrl+j"], "command": "move", "args": {"by": "lines", "forward": true}},
   { "keys": ["ctrl+k"], "command": "move", "args": {"by": "lines", "forward": false}},
   // Navigate if find result by enter (should place cursor before line-position)
-  { "keys": ["enter"], "command": "next_result", "context": [{"key": "selector", "operator": "equal", "operand": "text.find-in-files" }]}
+  { "keys": ["enter"], "command": "next_result", "context": [{"key": "selector", "operator": "equal", "operand": "text.find-in-files" }]},
+  // RubyTest
+  // { "keys": [",", "t", "s"], "command": "run_single_ruby_test",
+  //  "context": [ { "key": "selector", "operator": "equal",
+  //                  "operand": "source.ruby, source.rspec, text.gherkin.feature"
+  //              } ]
+  // }, // single test
+  // { "keys": [",", "t", "f"], "command": "run_all_ruby_test",
+  //     "context": [ { "key": "selector", "operator": "equal",
+  //                    "operand": "source.ruby, source.rspec, text.gherkin.feature"
+  //               } ]
+  // }, // test file
+  // { "keys": [",", "t", "p"], "command": "show_test_panel" }, // show test panel
+  // { "keys": [",", "f", "s"]}
+
 ]
