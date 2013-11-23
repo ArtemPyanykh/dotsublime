@@ -7,7 +7,6 @@
   // // // Repeat `f`
   // { "keys": [":"], "command": "set_motion", "args":{"motion": "vi_semicolon"}, "context": [{"key": "vi_mode_normal"}] },
   // { "keys": [":"], "command": "set_motion", "args":{"motion": "vi_semicolon"}, "context": [{"key": "vi_mode_visual"}] },
-  // // Leader mappins
   { "keys": ["super+equals"], "command": "zoom_pane", "args": {"fraction": 0.7}, "context": [{"key": "setting.command_mode"}] },
   { "keys": ["super+minus"], "command": "unzoom_pane", "args": {}, "context": [{"key": "setting.command_mode"}] },
   { "keys": ["ctrl+o"], "command": "jump_back" },
@@ -26,18 +25,5 @@
   { "keys": ["ctrl+k"], "command": "move", "args": {"by": "lines", "forward": false}},
   // Navigate if find result by enter (should place cursor before line-position)
   { "keys": ["enter"], "command": "next_result", "context": [{"key": "selector", "operator": "equal", "operand": "text.find-in-files" }]},
-  // RubyTest
-  // { "keys": [",", "t", "s"], "command": "run_single_ruby_test",
-  //  "context": [ { "key": "selector", "operator": "equal",
-  //                  "operand": "source.ruby, source.rspec, text.gherkin.feature"
-  //              } ]
-  // }, // single test
-  // { "keys": [",", "t", "f"], "command": "run_all_ruby_test",
-  //     "context": [ { "key": "selector", "operator": "equal",
-  //                    "operand": "source.ruby, source.rspec, text.gherkin.feature"
-  //               } ]
-  // }, // test file
-  // { "keys": [",", "t", "p"], "command": "show_test_panel" }, // show test panel
-  // { "keys": [",", "f", "s"]}
-
+  { "keys": ["super+k", "super+f"], "command": "focus_side_bar"}
 ]
