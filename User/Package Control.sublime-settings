@@ -1,6 +1,7 @@
 {
 	"installed_packages":
 	[
+		"AdvancedNewFile",
 		"AngularJS",
 		"AngularJS (CoffeeScript)",
 		"ApplySyntax",
@@ -12,6 +13,7 @@
 		"RSpec (snippets and syntax)",
 		"RubyTest",
 		"SideBarEnhancements",
+		"SublimeGit",
 		"SyncedSideBar",
 		"Theme - Soda",
 		"Vintageous",

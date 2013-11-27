@@ -11,8 +11,8 @@
   { "keys": ["super+minus"], "command": "unzoom_pane", "args": {}, "context": [{"key": "setting.command_mode"}] },
   { "keys": ["ctrl+o"], "command": "jump_back" },
   { "keys": ["ctrl+i"], "command": "jump_forward" },
-  { "keys": ["ctrl+["], "command": "goto_definition" },
-  { "keys": ["ctrl+]"], "command": "goto_symbol_in_project" },
+  { "keys": ["ctrl+]"], "command": "goto_definition" },
+  { "keys": ["ctrl+["], "command": "goto_symbol_in_project" },
 
   { "keys": ["ctrl+f"], "command": "set_motion", "args": {"motion": "vi_ctrl_f"}, "context": [{"key": "vi_mode_normal_or_any_visual"}] },
   { "keys": ["ctrl+b"], "command": "set_motion", "args": {"motion": "vi_ctrl_b"}, "context": [{"key": "vi_mode_normal_or_any_visual"}] },
