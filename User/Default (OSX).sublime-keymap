@@ -1,5 +1,5 @@
 [
-  { "keys": ["j", "j"], "command": "set_action", "args": {"action": "vi_esc"}, "context": [{"key": "vi_must_change_mode"}, {"key": "vi_is_buffer"}, {"key": "vi_mode_insert"}] },
+  { "keys": ["j", "k"], "command": "set_action", "args": {"action": "vi_esc"}, "context": [{"key": "vi_must_change_mode"}, {"key": "vi_is_buffer"}, {"key": "vi_mode_insert"}] },
   { "keys": ["ctrl+r"], "command": "redo" },
   // Enter command mode
   // { "keys": [";"], "command": "vi_colon_input", "context": [{"key": "setting.command_mode"}, {"key": "vi_enable_cmdline_mode"}] },
